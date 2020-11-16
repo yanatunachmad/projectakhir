@@ -6,6 +6,9 @@ import { HomeScreen, ProfileScreen, SettingsScreen, SignInScreen, SignUpScreen }
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+//todo: UI FINAL PROJECT => https://www.figma.com/file/6cgC8dEezzeNF3NLOH7uLd/DTI-Telkom-University-2020-Final-Projects-E-Money-Apps?node-id=0%3A1
+//todo: DUMMY API => https://reqres.in/
+
 const Tab = createBottomTabNavigator();
 
 function App() {
