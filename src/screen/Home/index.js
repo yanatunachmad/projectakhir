@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 
-function SignInScreen() {
+function Home() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>SignIn!</Text>
+      <Text>Home!</Text>
     </View>
   );
 }
 
-export default SignInScreen;
+export default Home;
