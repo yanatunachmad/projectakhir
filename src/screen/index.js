@@ -1,6 +1,6 @@
 import HomeScreen from './Home';
 import ProfileScreen from './profile';
-import SettingsScreen from './settings';
+import TransactionScreen from './Transaction';
 import SignInScreen from './SignIn';
 import SignUpScreen from './SignUp';
 import SplashScreen from './Splash';
@@ -8,7 +8,7 @@ import SplashScreen from './Splash';
 export {
   HomeScreen,
   ProfileScreen,
-  SettingsScreen,
+  TransactionScreen,
   SignInScreen,
   SignUpScreen,
   SplashScreen

@@ -9,7 +9,7 @@ const Item = ({ title, releaseYear }) => (
   </View>
 );
 
-function HomeScreen() {
+function ExampleScreen() {
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -93,4 +93,4 @@ function HomeScreen() {
   );
 }
 
-export default HomeScreen;
+export default ExampleScreen;
