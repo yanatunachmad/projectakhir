@@ -5,7 +5,7 @@ const mainColors = {
   dark2: '#495A75',
   dark3: '#8092AF',
   grey1: '#7D8797',
-  grey2: '#C3C3C3',
+  grey2: '#B3B3B3',
   grey3: '#EDEEF0',
   grey4: '#B1B7C2',
   blue1: '#4982C1',

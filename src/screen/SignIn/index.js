@@ -11,7 +11,9 @@ function SignIn({navigation}) {
       <View style={styles.page}>
         <View style={styles.body(width)}>
           <Text style={styles.title}>e-money</Text>
+          <Gap height={19}/>
           <Input placeholder="Email"/>
+          <Gap height={25}/>
           <Input placeholder="Password" secureTextEntry/>
           <Gap height={20}/>
           <Button title="LOGIN" onPress={() => navigation.replace('MainPage')}/>

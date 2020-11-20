@@ -2,7 +2,21 @@ import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { HomeScreen, ProfileScreen, TransactionScreen, SignInScreen, SignUpScreen, SplashScreen } from './src/screen'
+import { 
+  HomeScreen, 
+  ProfileScreen, 
+  TransactionScreen, 
+  SignInScreen, 
+  SignUpScreen, 
+  SplashScreen, 
+  TopUpScreen,
+  QRPayScreen,
+  TransferScreen,
+  TopUpSuccessScreen,
+  TransferSuccessScreen,
+  QRPayConfirmScreen,
+  PaySuccessScreen
+} from './src/screen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from "./src/component";
 
@@ -54,6 +68,55 @@ const StackNavigator = () => {
         <Stack.Screen 
           name="MainPage" 
           component={BottomTabNavigator}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="TopUp" 
+          component={TopUpScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="QRPay" 
+          component={QRPayScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="Transfer" 
+          component={TransferScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="TopUpSuccess"
+          component={TopUpSuccessScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="TransferSuccess"
+          component={TransferSuccessScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="QRPayConfirm"
+          component={QRPayConfirmScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="PaySuccess"
+          component={PaySuccessScreen}
           options={{
             headerShown: false
           }}

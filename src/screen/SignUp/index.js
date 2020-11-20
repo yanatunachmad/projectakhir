@@ -12,10 +12,13 @@ function SignUp({navigation}) {
       <View style={styles.page}>
         <View style={styles.body(width)}>
           <Input placeholder="Email"/>
+          <Gap height={31}/>
           <Input placeholder="Password" secureTextEntry/>
+          <Gap height={31}/>
           <Input placeholder="Nama"/>
+          <Gap height={31}/>
           <Input placeholder="No. Hnadphone"/>
-          <Gap height={20}/>
+          <Gap height={31}/>
           <Button title="SUBMIT" onPress={() => navigation.replace('MainPage')}/>
         </View>
       </View>

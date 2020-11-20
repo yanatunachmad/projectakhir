@@ -9,6 +9,11 @@ import IconQRPay from './icon-qrpay.png';
 import IconTopup from './icon-topup.png';
 import IconTranfer from './icon-transfer.png';
 import IconCompareArrow from './ic-compare-arrow.png';
+import TopUpVector from './topup-vector.png';
+import TransferVector from './transfer-vector.png';
+import GreyRectangle from './grey-rectangle.png';
+import IconOpenQRPay from "./icon-openQRPay.png";
+import PaymentVector from "./payment-vector.png";
 
 export{
   HomeActive,
@@ -20,5 +25,10 @@ export{
   IconTopup,
   IconQRPay,
   IconTranfer,
-  IconCompareArrow
+  IconCompareArrow,
+  TopUpVector,
+  TransferVector,
+  GreyRectangle,
+  IconOpenQRPay,
+  PaymentVector
 };

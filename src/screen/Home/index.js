@@ -4,7 +4,7 @@ import { IconQRPay, IconTranfer, IconTopup } from "../../assets";
 import { Gap, TransactionCard } from "../../component";
 import { colors } from "../../utils";
 
-function Home() {
+function Home({navigation}) {
 
   const [height, setHeight] = useState(Dimensions.get('window').height * 0.07);
 
@@ -75,7 +75,7 @@ function Home() {
       <View style={styles.menuGrid}>
         {menuType.map(menu => {
             return(
-              <TouchableOpacity key={menu.title}>
+              <TouchableOpacity key={menu.title} onPress={() => navigation.navigate(menu.navigasi)}>
                 <View style={styles.menu}>
                   <Image source={menu.iconSource} style={styles.image}/>
                 </View>
