@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity  } from 'react-native';
-import { Button, Input, Gap } from "../../component";
+import { Button, Input, Gap, Header } from "../../component";
 
 function SignInHunter({navigation}) {
   

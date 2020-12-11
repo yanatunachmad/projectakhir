@@ -65,8 +65,7 @@ function Home({navigation}) {
        {/* ------- HEADER ---------- */}
       <View style={styles.headerContainer}>
         <Gap height={height}/>
-        <Text style={styles.titleSaldo}>List Company</Text>
-        <Text style={styles.numberSaldo}>Rp. 1.234.567.000</Text>
+        
       </View>
 
       <Gap height={20}/>
