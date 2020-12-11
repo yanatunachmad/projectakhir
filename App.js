@@ -6,8 +6,10 @@ import {
   HomeScreen, 
   ProfileScreen, 
   TransactionScreen, 
-  SignInScreen, 
-  SignUpScreen, 
+  SignInHunter, 
+  SignInCompany,
+  SignUpHunter, 
+  SignUpCompany,
   SplashScreen, 
   TopUpScreen,
   QRPayScreen,
@@ -15,13 +17,12 @@ import {
   TopUpSuccessScreen,
   TransferSuccessScreen,
   QRPayConfirmScreen,
-  PaySuccessScreen
+  PaySuccessScreen,
+  ChooseSignUp,
 } from './src/screen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from "./src/component";
 
-//todo: UI FINAL PROJECT => https://www.figma.com/file/6cgC8dEezzeNF3NLOH7uLd/DTI-Telkom-University-2020-Final-Projects-E-Money-Apps?node-id=0%3A1
-//todo: DUMMY API => https://reqres.in/
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -52,15 +53,29 @@ const StackNavigator = () => {
           }}
         />
         <Stack.Screen 
-          name="SignIn" 
-          component={SignInScreen}
+          name="SignInHunter" 
+          component={SignInHunter}
           options={{
             headerShown: false
           }}
         />
         <Stack.Screen 
-          name="SignUp" 
-          component={SignUpScreen}
+          name="SignUpHunter" 
+          component={SignUpHunter}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="SignInCompany" 
+          component={SignInCompany}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="SignUpCompany" 
+          component={SignUpCompany}
           options={{
             headerShown: false
           }}
@@ -120,6 +135,14 @@ const StackNavigator = () => {
           options={{
             headerShown: false
           }}
+        />
+        <Stack.Screen
+        name="ChooseSignUp"
+        component={ChooseSignUp}
+        options={{
+          headerShown: false
+        
+        }}
         />
       </Stack.Navigator>
     </NavigationContainer>

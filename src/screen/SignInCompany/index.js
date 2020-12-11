@@ -2,24 +2,30 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity  } from 'react-native';
 import { Button, Input, Gap } from "../../component";
 
-function SignIn({navigation}) {
+function SignInCompany({navigation}) {
   
-  const [width, setWidth] = useState(Dimensions.get('window').height * 0.35);
+  const [width, setWidth] = useState(Dimensions.get('window').height * 0.18);
+  const [height, setHeight] = useState(Dimensions.get('window').height * 0.1);
 
   return (
     <>
+    <View style={styles.headerContainer}>
+        <Gap height={height}/>
+        <Text style={styles.title}>Login</Text>
+        <Text style={styles.title}>Company</Text>
+      </View>
       <View style={styles.page}>
         <View style={styles.body(width)}>
-          <Text style={styles.title}>e-money</Text>
-          <Gap height={19}/>
           <Input placeholder="Email"/>
           <Gap height={25}/>
           <Input placeholder="Password" secureTextEntry/>
           <Gap height={20}/>
           <Button title="LOGIN" onPress={() => navigation.replace('MainPage')}/>
           <Gap height={20}/>
-          <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
-            <Text style={styles.regist}>Registrasi</Text>
+          <Text style={styles.regist}>Don’t have an account?</Text>
+          <TouchableOpacity onPress={() => navigation.navigate('SignUpCompany')}>
+            <Text style={styles.register}>Registrasi</Text>
+          
           </TouchableOpacity>
         </View>
       </View>
@@ -27,9 +33,13 @@ function SignIn({navigation}) {
   );
 }
 
-export default SignIn;
+export default SignInCompany;
 
 const styles = StyleSheet.create({
+  headerContainer: {
+    backgroundColor: 'white',
+    padding: 20
+  },
   page: {
     flex: 1,
     paddingHorizontal: 40,
@@ -41,13 +51,19 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 29,
     fontWeight: "600",
-    color: "#4982C1",
-    textAlign: "center"
+    color: "#000000",
+    textAlign: "left"
   },
   regist: {
-    fontSize: 15,
+    fontSize: 12,
     fontWeight: "600",
     color: "black",
+    textAlign: "center"
+  },
+  register: {
+    fontSize: 15,
+    fontWeight: "bold",
+    color: "#F09E56",
     textAlign: "center"
   },
 });

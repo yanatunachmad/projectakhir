@@ -1,8 +1,10 @@
 import HomeScreen from './Home';
 import ProfileScreen from './profile';
 import TransactionScreen from './Transaction';
-import SignInScreen from './SignIn';
-import SignUpScreen from './SignUp';
+import SignInHunter from './SignInHunter';
+import SignInCompany from './SignInCompany';
+import SignUpHunter from './SignUpHunter';
+import SignUpCompany from './SignUpCompany';
 import SplashScreen from './Splash';
 import TopUpScreen from './TopUp';
 import QRPayScreen from './QRPay';
@@ -11,13 +13,16 @@ import TopUpSuccessScreen from './TopUpSuccess';
 import TransferSuccessScreen from './TransferSuccess';
 import QRPayConfirmScreen from './QRPayConfirm';
 import PaySuccessScreen from './PaySuccess';
+import ChooseSignUp from './Choose Sign Up';
 
 export {
   HomeScreen,
   ProfileScreen,
   TransactionScreen,
-  SignInScreen,
-  SignUpScreen,
+  SignInHunter,
+  SignInCompany,
+  SignUpHunter,
+  SignUpCompany,
   SplashScreen,
   TopUpScreen,
   QRPayScreen,
@@ -25,5 +30,6 @@ export {
   TopUpSuccessScreen,
   TransferSuccessScreen,
   QRPayConfirmScreen,
-  PaySuccessScreen
+  PaySuccessScreen,
+  ChooseSignUp,
 };

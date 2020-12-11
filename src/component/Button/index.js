@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.button.primary.background,
     paddingVertical: 13,
-    borderRadius: 5
+    borderRadius: 10
   },
   disableBg: {
     paddingVertical: 10,

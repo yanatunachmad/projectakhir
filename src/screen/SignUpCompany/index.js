@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity  } from 'react-native';
 import { Button, Input, Gap, Header } from "../../component";
 
-function SignUp({navigation}) {
+function SignUpHunter({navigation}) {
   
   const [width, setWidth] = useState(Dimensions.get('window').height * 0.10);
 
@@ -11,22 +11,24 @@ function SignUp({navigation}) {
       <Header goBack title="Registrasi Akun"/>
       <View style={styles.page}>
         <View style={styles.body(width)}>
+          <Input placeholder="Company Name"/>
+          <Gap height={31}/>
           <Input placeholder="Email"/>
+          <Gap height={31}/>
+          <Input placeholder="Phone Number"/>
+          <Gap height={31}/>
+          <Input placeholder="Username"/>
           <Gap height={31}/>
           <Input placeholder="Password" secureTextEntry/>
           <Gap height={31}/>
-          <Input placeholder="Nama"/>
-          <Gap height={31}/>
-          <Input placeholder="No. Hnadphone"/>
-          <Gap height={31}/>
-          <Button title="SUBMIT" onPress={() => navigation.replace('MainPage')}/>
+          <Button title="Register" onPress={() => navigation.replace('SignInCompany')}/>
         </View>
       </View>
     </>
   );
 }
 
-export default SignUp;
+export default SignUpHunter;
 
 const styles = StyleSheet.create({
   page: {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Text, View, Image, StyleSheet, TouchableOpacity, Dimensions, ScrollView } from 'react-native';
-import { IconQRPay, IconTranfer, IconTopup } from "../../assets";
+import { Telkomsel, Indosat, XL } from "../../assets";
 import { Gap, TransactionCard } from "../../component";
 import { colors } from "../../utils";
 
@@ -10,18 +10,18 @@ function Home({navigation}) {
 
   const menuType = [
     {
-      iconSource: IconTopup,
-      title: 'Top Up',
+      iconSource: Telkomsel,
+      title: 'Telkomsel',
       navigasi : 'TopUp'
     },
     {
-      iconSource: IconQRPay,
-      title: 'QR Pay',
+      iconSource: Indosat,
+      title: 'Indosat',
       navigasi : 'QRPay'
     },
     {
-      iconSource: IconTranfer,
-      title: 'Transfer',
+      iconSource: XL,
+      title: 'XL',
       navigasi : 'Transfer'
     }
   ];
@@ -65,7 +65,7 @@ function Home({navigation}) {
        {/* ------- HEADER ---------- */}
       <View style={styles.headerContainer}>
         <Gap height={height}/>
-        <Text style={styles.titleSaldo}>Saldo Anda :</Text>
+        <Text style={styles.titleSaldo}>List Company</Text>
         <Text style={styles.numberSaldo}>Rp. 1.234.567.000</Text>
       </View>
 
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 23,
     marginTop: 13,
     marginBottom: 5,
-    borderRadius: 10,
+    borderRadius: 20,
     padding: 17,
     backgroundColor: colors.white
   },
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
   },
   menuTitle: {
     textAlign: 'center',
-    fontSize: 16,
+    fontSize: 15,
     color: colors.white,
     marginBottom: 7
   },

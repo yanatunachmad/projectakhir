@@ -8,7 +8,7 @@ const mainColors = {
   grey2: '#B3B3B3',
   grey3: '#EDEEF0',
   grey4: '#B1B7C2',
-  blue1: '#4982C1',
+  jingga1: '#FADC9C',
   blue2: '#005690',
   black1: '#000000',
   black2: 'rgba(0, 0, 0, 0.5)',
@@ -18,7 +18,7 @@ const mainColors = {
 export const colors = {
   primary: mainColors.green1,
   secondary: mainColors.dark1,
-  tertiary: mainColors.blue1,
+  tertiary: mainColors.jingga1,
   blueDark: mainColors.blue2,
   white: 'white',
   black: 'black',
@@ -32,8 +32,8 @@ export const colors = {
   },
   button: {
     primary: {
-      background: mainColors.blue1,
-      text: 'white',
+      background: mainColors.jingga1,
+      text: 'black',
     },
     secondary: {
       background: 'white',

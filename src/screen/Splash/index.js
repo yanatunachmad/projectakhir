@@ -1,19 +1,21 @@
 import React, { useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , Image } from 'react-native';
 import { colors } from '../../utils';
+
 
 const Splash = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-        navigation.replace('SignIn');
+        navigation.replace('ChooseSignUp');
     }, 3000);
   }, []);
 
   return (
     <View style={styles.page}>
-      <Text style={styles.title}>
-        e-money
-      </Text>
+        <Image style={styles.logo}
+        source={require('../Splash/Splash.png')}
+        />
+        <Text>Hai</Text>
     </View>
   )
 }
@@ -32,5 +34,9 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#4982C1",
     textAlign: "center"
+  },
+  logo: {
+    width:360,
+    height:640,
   }
 });

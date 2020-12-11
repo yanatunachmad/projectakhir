@@ -8,7 +8,7 @@ function ProfileScreen({navigation}) {
   const user = {
     id: "1234567",
     profilePic: "https://i.pinimg.com/originals/f5/05/24/f50524ee5f161f437400aaf215c9e12f.jpg",
-    fullname: "Dimas Agusta Wiranata",
+    fullname: "Dewi Cantik",
     rekening : '081234567890'
   };
 
@@ -29,7 +29,7 @@ function ProfileScreen({navigation}) {
         <Gap height={26}/>
         <Button title="GANTI PASSWORD"/>
         <Gap height={26}/>
-        <Button title="LOGOUT" onPress={() => navigation.replace("SignIn")}/>
+        <Button title="LOGOUT" onPress={() => navigation.replace("SignInHunter")}/>
       </View>
     </>
   );

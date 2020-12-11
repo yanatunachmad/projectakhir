@@ -14,6 +14,10 @@ import TransferVector from './transfer-vector.png';
 import GreyRectangle from './grey-rectangle.png';
 import IconOpenQRPay from "./icon-openQRPay.png";
 import PaymentVector from "./payment-vector.png";
+import Telkomsel from "./telkomsel.png";
+import Indosat from "./indosat.png";
+import XL from "./xl.png"
+
 
 export{
   HomeActive,
@@ -30,5 +34,8 @@ export{
   TransferVector,
   GreyRectangle,
   IconOpenQRPay,
-  PaymentVector
+  PaymentVector,
+  Telkomsel,
+  Indosat,
+  XL
 };
