@@ -6,6 +6,8 @@ import Header from "./Header";
 import TabItem from "./TabItem";
 import BottomNavigator from "./BottomNavigator";
 import TransactionCard from "./TransactionCard";
+import Backbutton from "./Button/Backbutton"
+import Item from "./EntriItem/Index"
 
 export {
   Button,
@@ -15,5 +17,7 @@ export {
   Header,
   TabItem,
   BottomNavigator,
-  TransactionCard
+  TransactionCard,
+  Backbutton,
+  Item,
 };

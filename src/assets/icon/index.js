@@ -17,7 +17,12 @@ import PaymentVector from "./payment-vector.png";
 import Telkomsel from "./telkomsel.png";
 import Indosat from "./indosat.png";
 import XL from "./xl.png"
-
+import IconBack from "./Vector.png"
+import IconEmail from "./email.png"
+import IconGembok from "./gembok.png"
+import IconSchool from "./school.png"
+import IconTelp from "./Telephone.png"
+import IconAkun from "./akun.png"
 
 export{
   HomeActive,
@@ -37,5 +42,11 @@ export{
   PaymentVector,
   Telkomsel,
   Indosat,
-  XL
+  XL,
+  IconBack,
+  IconEmail,
+  IconGembok,
+  IconSchool,
+  IconAkun,
+  IconTelp,
 };

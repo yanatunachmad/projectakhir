@@ -13,6 +13,7 @@ const mainColors = {
   black1: '#000000',
   black2: 'rgba(0, 0, 0, 0.5)',
   red1: '#E06379',
+  header: '#F09E56',
 };
 
 export const colors = {
@@ -23,6 +24,7 @@ export const colors = {
   white: 'white',
   black: 'black',
   disable: mainColors.grey3,
+  header: mainColors.header,
   text: {
     primary: mainColors.dark1,
     secondary: mainColors.grey1,

@@ -1,8 +1,9 @@
 import React from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import { colors } from '../../utils';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
+import { IconBack } from '../../assets';
 
 const Header = ({goBack, title}) => {
   const navigation = useNavigation();
@@ -11,9 +12,7 @@ const Header = ({goBack, title}) => {
       <View style={styles.content}>
         { goBack &&
           <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Ionicons
-              name="arrow-back" size={25} color="#fff"
-            />
+           <Image source={IconBack} style={styles.logo} />
           </TouchableOpacity>
         }
         <Text style={styles.title}>{title}</Text>
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 17,
     paddingVertical: 18,
-    backgroundColor: colors.blueDark
+    backgroundColor: colors.tertiary
   },
   content: {
     flexDirection: 'row',
@@ -36,8 +35,8 @@ const styles = StyleSheet.create({
   },
   title: {
     marginLeft: 12,
-    color: colors.white,
+    color: colors.header,
     fontSize: 19,
     fontWeight: "600"
-  }
+  },
 });
