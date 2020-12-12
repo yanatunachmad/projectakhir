@@ -1,24 +1,30 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
+import { Telkomsel } from '../../assets'
+import { SignInHunter } from '../../screen'
 import { colors } from '../../utils'
 import Gap from '../Gap'
 
-const Item = ({ Company, email, Number }) => {
+const Item = ({ Company, email, Number,source, navigation }) => {
     return (
         <View style={styles.Item}>
             <View style={styles.Text1}>
                 <Text style={styles.Text}>{Company}</Text>
                 <Text style={styles.Text}>{email}</Text>
-                <Text style={styles.Text}>{Number}</Text>
+                <Text style={styles.Text2}>{Number}</Text>
             </View>
             <View style={styles.colom2}>
-                <View style={styles.logo}>
+                <View>
+                    <Image source={source} style={styles.logo} />
 
                 </View>
                 <Gap height={20}/>
-                <View style={styles.view}>
-
+                <TouchableOpacity  style={styles.view}>
+                <View  onPress={() => navigation.replace(SignInHunter)}>
+                    <Text>View</Text>
                 </View>
+                </TouchableOpacity>
             </View>
         </View>
     )
@@ -31,16 +37,23 @@ const styles = StyleSheet.create({
         paddingVertical: 5
     },
     Item: {
-        backgroundColor: 'red',
+        backgroundColor: 'white',
         paddingHorizontal: 12,
         paddingTop: 20,
         paddingBottom: 50,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        borderRadius:20,
+        borderWidth:0.24,
     },
     Text: {
         fontSize: 14,
         padding: 2,
+    },
+    Text2: {
+        fontSize: 14,
+        padding: 2,
+        color: colors.tertiary
     },
     Text1: {
         justifyContent: 'flex-start',
@@ -54,10 +67,9 @@ const styles = StyleSheet.create({
 
     },
     view: {
-        backgroundColor: 'blue',
-        paddingHorizontal: 50,
-        height:90,
-        width:24,
+        backgroundColor: colors.tertiary,
+        borderRadius:12,
+        height:20,
 
         alignItems:'center'
         

@@ -1,4 +1,4 @@
-import HomeScreen from './Home';
+import HomeScreenHunter from './HomeHunter';
 import ProfileScreen from './profile';
 import TransactionScreen from './Transaction';
 import SignInHunter from './SignInHunter';
@@ -14,9 +14,11 @@ import TransferSuccessScreen from './TransferSuccess';
 import QRPayConfirmScreen from './QRPayConfirm';
 import PaySuccessScreen from './PaySuccess';
 import ChooseSignUp from './Choose Sign Up';
+import ViewCompany from './ViewCompany/Index';
+
 
 export {
-  HomeScreen,
+  HomeScreenHunter,
   ProfileScreen,
   TransactionScreen,
   SignInHunter,
@@ -32,4 +34,6 @@ export {
   QRPayConfirmScreen,
   PaySuccessScreen,
   ChooseSignUp,
+  ViewCompany,
+
 };

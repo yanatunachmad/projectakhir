@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { 
-  HomeScreen, 
+  HomeScreenHunter, 
   ProfileScreen, 
   TransactionScreen, 
   SignInHunter, 
@@ -19,6 +19,7 @@ import {
   QRPayConfirmScreen,
   PaySuccessScreen,
   ChooseSignUp,
+  ViewCompany,
 } from './src/screen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from "./src/component";
@@ -32,7 +33,7 @@ const BottomTabNavigator = () => {
     <Tab.Navigator
       tabBar={props => <BottomNavigator {...props}/>}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Home" component={HomeScreenHunter} />
       <Tab.Screen name="InOut" component={TransactionScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
@@ -48,6 +49,13 @@ const StackNavigator = () => {
         <Stack.Screen 
           name="Splash" 
           component={SplashScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name="ViewCompany" 
+          component={ViewCompany}
           options={{
             headerShown: false
           }}
